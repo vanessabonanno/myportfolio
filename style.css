@@ -1,0 +1,9 @@
+
+.simple-menu {
+    display: flex;
+    width: 136px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+}
