@@ -1,0 +1,62 @@
+
+                <div class="row g-0" id="horizontal-card">
+                  <div class="col-md-4">
+                    <div class="img-box py-3 px-3">
+                      <img src="assets/imgs/iPhone 14.png" class="img-fluid rounded-start" alt="mockup iPhone 14 SMC website design Vanessa Bonanno">
+                    </div>
+                  </div>
+                  <div class="col-md-8 card-content">
+                    <div class="text-box">
+                      <h1>Website redesign</h1>
+                      <p>Fresh new design for SMC website, mobile and desktop versions. </p>
+                    </div>
+                    <button type="button" class="button-outline">
+                      Go to Website redesign
+                      <span class="material-symbols-rounded">
+                        arrow_forward
+                        </span>
+                    </button>
+                  </div>
+                </div>
+
+        --------------------------------
+
+                
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb sm-0">
+                      <div class="card" id="vertical-card" style="width: 18rem;">
+                        <img src="assets/imgs/iPhone 13 Pro.png" class="card-img-top py-3 px-3" alt="mockup iPhone13 weather app UI">
+                        <div class="card-body card-content-vertical">
+                          <div class="text-box">
+                            <h1>Weather app UI</h1>
+                            <p>The design explores Glassmorphism to create a simple yet sophisticated interface.
+                              Find out more about the Weather app interface!</p>
+                          </div>
+  
+                          <button type="button" class="button-arrow" id="b">
+                            <span class="material-symbols-rounded">
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card" id="vertical-card" style="width: 18rem;">
+                        <img src="assets/imgs/MacBook Air (15 inch).png" class="card-img-top py-3 px-3" alt="mockup iPhone13 weather app UI">
+                        <div class="card-body card-content-vertical">
+                          <div class="text-box">
+                            <h1>Weather app UI</h1>
+                            <p>The design explores Glassmorphism to create a simple yet sophisticated interface.
+                              Find out more about the Weather app interface!</p>
+                          </div>
+  
+                          <button type="button" class="button-arrow" id="b">
+                            <span class="material-symbols-rounded">
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>

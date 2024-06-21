@@ -145,7 +145,7 @@ ul {
     gap: 4px;
     border-radius: 24px;
     border: 1px solid #2F5279;
-    background-color: transparent;
+    background-color: #F6F9FB;
     color: #2F5279;
     font-family: "Ubuntu Mono";
     font-size: 20px;
@@ -161,7 +161,7 @@ ul {
     gap: 4px;
     border-radius: 24px;
     border: 1px solid #9C4F8B;
-    background-color: transparent;
+    background-color: #F6F9FB;
     color: #9C4F8B;
     font-family: "Ubuntu Mono";
     font-size: 20px;
@@ -211,7 +211,22 @@ p {
 }
 
 
-/* HORIZONTAL CARD */
+/* CARD */
+.card {
+    
+    gap: var(--font-size-caption, 16px);
+    border-radius: 24px;
+    border-color: #FFF;
+    background: #FFF;
+}
+
+.card .card-content {
+    padding: var(--font-size-caption, 16px) var(--font-size-caption, 16px) 24px var(--font-size-caption, 16px);
+    gap: var(--font-size-h3, 32px);
+}
+
+
+/* HORIZONTAL CARD 
 #horizontal-card {
     display: flex;
     height: 424px;
@@ -231,6 +246,7 @@ p {
     flex: 1 0 0;
     align-self: stretch;
 }
+*/
 
 .card-content .text-box {
     display: flex;
@@ -250,6 +266,108 @@ p {
 }
 
 .card-content p {
+    color: #1B2833;
+    /* Body_1 */
+    font-family: "Quattrocento Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+/* VERTICAL CARD */
+#vertical-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 24px;
+    background: #FFF;
+}
+
+.verticale {
+    max-width:100%;
+    height:auto;
+}
+
+
+#vertical-card .card-content {
+    display: flex;
+    padding: var(--font-size-caption, 16px) var(--font-size-caption, 16px) 24px var(--font-size-caption, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--font-size-h3, 32px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.button-arrow {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid #4F769C;
+    color: #4F769C;
+    background-color: transparent;
+}
+
+.button-arrow:active {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid #9C4F8B;
+    color: #9C4F8B;
+    background-color: #F6F9FB;
+
+}
+
+
+#vertical-card:hover > .card-content-vertical > #b {
+    border: 1px solid #2F5279;
+    color: #2F5279;
+    background-color: #F6F9FB;
+}
+
+
+#vertical-card:active > .card-content-vertical > #b {
+    border: 1px solid #9C4F8B;
+    color: #9C4F8B;
+    background-color: #F6F9FB;
+}
+
+.card-content-vertical {
+    display: flex;
+    padding: 0px var(--font-size-caption, 16px) var(--font-size-caption, 16px) var(--font-size-caption, 16px);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card-content-vertical .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--font-size-caption, 16px);
+    align-self: stretch;
+}
+
+.card-content-vertical h1 {
+    color: #1B2833;
+    font-family: "Ubuntu Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 26.4px */
+}
+
+.card-content-vertical p {
     color: #1B2833;
     /* Body_1 */
     font-family: "Quattrocento Sans";
