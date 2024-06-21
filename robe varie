@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb sm-0">
                       <div class="card" id="vertical-card" style="width: 18rem;">
-                        <img src="assets/imgs/iPhone 13 Pro.png" class="card-img-top py-3 px-3" alt="mockup iPhone13 weather app UI">
+                        <img src="assets/imgs/iPhone 13 Pro.png" class="card-img-other py-3 px-3" alt="mockup iPhone13 weather app UI">
                         <div class="card-body card-content-vertical">
                           <div class="text-box">
                             <h1>Weather app UI</h1>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="card" id="vertical-card" style="width: 18rem;">
-                        <img src="assets/imgs/MacBook Air (15 inch).png" class="card-img-top py-3 px-3" alt="mockup iPhone13 weather app UI">
+                        <img src="assets/imgs/MacBook Air (15 inch).png" class="card-img-other py-3 px-3" alt="mockup iPhone13 weather app UI">
                         <div class="card-body card-content-vertical">
                           <div class="text-box">
                             <h1>Weather app UI</h1>
