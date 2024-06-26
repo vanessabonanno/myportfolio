@@ -217,8 +217,20 @@ ul {
     gap: var(--font-size-h2, 40px);
 }
 
+.details {
+    margin-top: 2rem;
+    grid-column-gap: 2rem;
+}
+
+.details .col-4 img {
+    border: 1px solid #B6C9DA;
+    border-radius: 24px;
+}
+
+
 .img-fluid {
-    max-width: 80%;
+    
+    
 }
 
 .img-static {
