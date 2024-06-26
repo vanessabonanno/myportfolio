@@ -273,17 +273,6 @@ p {
 
 }
 
-.about-body-resume {
-    display: flex;
-    padding-left: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3rem;
-    border-left: 1px solid #5e9c4f;
-
-}
-
-
 .paragraphs {
     color: #080F14;
     /* Body_1 */
@@ -295,6 +284,18 @@ p {
 }
 
 
+/* resume */
+
+.about-body-resume {
+    display: flex;
+    padding-left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    border-left: 1px solid #5e9c4f;
+
+}
+
 .paragraphs-resume > p {
     color: #080F14;
     /* Body_1 */
@@ -305,6 +306,9 @@ p {
     line-height: 150%; /* 24px */
 }
 
+.spazio-resume {
+    margin-bottom: 3rem;
+}
 
 .paragraphs > .spazio-resume > p {
     color: #080F14;
@@ -317,7 +321,10 @@ p {
     margin-bottom: 10px;
 }
 
-
+.riga-resume .heading {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 
 strong {
     /*  color: #5E9C4F;  */
