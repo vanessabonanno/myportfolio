@@ -489,7 +489,21 @@ strong {
   border-radius: 24%;
 }
 
+.card-resume{
+    background-color: transparent;
+    border-color: transparent;
+}
 
+.testo-dati-personali p{
+    color: #080F14;
+    /* Body_1 */
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%; /* 24px */
+
+}
 
 
 .aa {
