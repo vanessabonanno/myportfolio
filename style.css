@@ -18,16 +18,6 @@ body {
     line-height: 150%; /* 24px */
 }
 
-.paragraphs {
-    color: #080F14;
-    /* Body_1 */
-    font-family: "Quattrocento Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-}
-
 .heading {
     color: #1B2833;
     font-family: "Ubuntu Mono";
@@ -231,6 +221,24 @@ ul {
     max-width: 80%;
 }
 
+.img-static {
+    border-radius: 24px;
+    filter: grayscale(40%);
+    
+}
+
+/*  DA BIANCO E NERO A COLORI CON IMG HOVER
+.sezione-card img {
+    border-radius: 24px;
+    filter: grayscale(80%);
+}
+
+.sezione-card:hover img {
+    border-radius: 24px;
+    filter: grayscale(0%);
+}
+*/
+
 p {
     color: #1B2833;
     /* Body_1 */
@@ -249,6 +257,61 @@ p {
     line-height: 150%; /* 24px */
 }
 
+
+.paragraphs {
+    color: #080F14;
+    /* Body_1 */
+    font-family: "Quattrocento Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.about-body-resume {
+    display: flex;
+    padding-left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+    border-left: 1px solid #5e9c4f;
+}
+
+
+
+.paragraphs-resume > p {
+    color: #080F14;
+    /* Body_1 */
+    font-family: "Quattrocento Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.spazio-resume {
+    margin-bottom: 40px;
+}
+
+.paragraphs > .spazio-resume > p {
+    color: #080F14;
+    /* Body_1 */
+    font-family: "Quattrocento Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 10px;
+}
+
+strong {
+    /*  color: #5E9C4F;  */
+    color: #316E26;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
 
 /* CARD */
 .card {
