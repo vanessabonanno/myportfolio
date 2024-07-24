@@ -27,6 +27,12 @@ body {
     line-height: 150%; /* 27px */
 }
 
+/* --- NAVBAR --- */
+
+.burger-icon {
+    display: none;
+}
+
 .simple-menu {
     color: #1B2833;
     display: flex;
@@ -153,6 +159,8 @@ ul {
 */
 
 
+/*   BUTTONS   */
+
 .button-outline {
     width: auto;
     display: flex;
@@ -202,7 +210,26 @@ ul {
     line-height: 110%; /* 22px */
 }
 
-/*   BUTTONS   */
+
+.icon-arrow {
+    fill:none;
+    stroke:#4F769C;
+    stroke-width:2;
+}
+
+.button-outline:hover .icon-arrow {
+    fill:none;
+    stroke:#2F5279;
+    stroke-width:2; 
+}
+
+.button-outline:active .icon-arrow {
+    fill:none;
+    stroke:#9C4F8B;
+    stroke-width:2;
+}
+
+
 .material-symbols-rounded {
     font-variation-settings:
     'FILL' 0,
@@ -231,10 +258,6 @@ ul {
 }
 
 
-.img-fluid {
-    
-    
-}
 
 .img-static {
     border-radius: 24px;
@@ -432,7 +455,17 @@ strong {
     background-color: transparent;
 }
 
+#vertical-card:hover .icon-arrow {
+    fill:none;
+    stroke:#2F5279;
+    stroke-width:2; 
+}
 
+#vertical-card:active .icon-arrow {
+    fill:none;
+    stroke:#9C4F8B;
+    stroke-width:2;
+}
 
 .card-img-first {
     max-height: 80%;
@@ -516,4 +549,21 @@ strong {
 .aa {
     background-color: #4F769C;
     border: 2px solid #9C4F8B;
+}
+
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px){
+    body {
+        background-color: lightblue;
+      }
+    /* Show the burger menu icon */
+    .burger-icon {
+      display: block;
+    }
+
+    .simple-menu {
+        display: none;
+       }
+
 }
