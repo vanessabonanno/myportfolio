@@ -555,7 +555,7 @@ strong {
 /* Media query for mobile screens */
 @media only screen and (max-width: 600px){
     body {
-        background-color: lightblue;
+        
       }
     /* Show the burger menu icon */
     .burger-icon {
