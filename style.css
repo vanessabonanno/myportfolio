@@ -19,7 +19,7 @@ body {
 }
 
 .heading {
-    color: #1B2833;
+    color: #1B2832;
     font-family: "Ubuntu Mono";
     font-size: 18px;
     font-style: normal;
@@ -554,10 +554,10 @@ strong {
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 600px){
-    body {
+    /* body {
         
       }
-    /* Show the burger menu icon */
+    Show the burger menu icon */
     .burger-icon {
       display: block;
     }
