@@ -16,6 +16,10 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
+    margin: 0; /* Rimuove il margine predefinito del browser */
+    padding-left: 16px; /* Aggiunge spazio interno al body */
+    padding-right: 16px; /* Aggiunge spazio interno al body */
+
 }
 
 .heading {
@@ -137,7 +141,10 @@ a:active {
     line-height: 150%; /* 24px */
 }
 
-
+nav ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
 
 .go-back {
     font-size: 14px;
@@ -145,7 +152,10 @@ a:active {
 
 ul {
     list-style-type: square;
-    padding-left: 0;
+}
+
+li::marker {
+  color: red;
 }
 
 /* BORDI PER IDENTIFICARE LE COLONNE E I CONTENITORI 
