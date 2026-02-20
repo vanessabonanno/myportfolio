@@ -11,7 +11,7 @@
 body {
     background: #F6F9FB;
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Quattrocento Sans", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -112,6 +112,14 @@ a:active {
     text-decoration: none;
 }
 
+.text-strong {
+    font-weight: 700;
+    color: #354E64;
+    font-size: 16px;
+    line-height: 150%; 
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+} 
 
 .nav-link {
     color: #1B2833;
@@ -155,7 +163,12 @@ ul {
 }
 
 li::marker {
-  color: red;
+  color: #476985;
+}
+
+.about-section li {
+    line-height: 200%; /* 24px */
+
 }
 
 /* BORDI PER IDENTIFICARE LE COLONNE E I CONTENITORI 
@@ -249,13 +262,29 @@ li::marker {
   
 }
 
-/*  Body - About page  */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;        
+}
+
 .about-body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--font-size-h2, 40px);
+    align-self: stretch;
+    gap: 14px;        
 }
+
+.about-body p {
+    margin-bottom: 0; 
+}
+
+.chapters {
+    gap: 32px;
+}
+
 
 .details {
     margin-top: 2rem;
@@ -359,14 +388,15 @@ p {
     margin-top: 10px;
 }
 
-strong {
-    /*  color: #5E9C4F;  */
+/*
+strong {    
     color: #316E26;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */
-}
+    line-height: 150%; 
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+} */
 
 /* CARD */
 .card {
