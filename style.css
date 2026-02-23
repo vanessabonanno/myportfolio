@@ -346,7 +346,7 @@ p {
 }
 
 
-/* resume */
+/* Sezione Resume */
 
 .about-body-resume {
     display: flex;
@@ -398,13 +398,102 @@ strong {
     font-style: normal;
 } */
 
-/* CARD */
+
+/*. ------- CARD ------- */
 .card {
-    
     border-radius: 24px;
     border-color: #FFF;
     background: #FFF;
 }
+
+.annotation.list {
+    gap: 16px;
+}
+
+.annotation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;   
+  padding: 16px;
+  border-radius: 24px;
+  border: 1px solid #C6DCF0;
+  background-color: #F6F9FB;
+  /* responsive */
+  width: 100%;           /* occupa tutto lo spazio della colonna */
+  min-width: 160px;      /* Non sotto i 160px */
+  max-width: 300px;      /* Non più larga di così su schermi enormi */
+  /* impedire alle parole lunghe di rompere il layout se la card è molto stretta */
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+.annotation-card p {
+  color: #30475A;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.28px;
+  margin: 0 !important;
+  gap: 0px;
+}
+
+.annotation-text {
+  color: #30475A;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.28px;
+  margin: 0; 
+  gap: 0px;
+}
+
+
+.annotation-text > * { 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
+
+.annotation-badge-style {
+  display: inline-flex;
+  padding: 4px 12px; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* Stili del testo del badge  */
+  color: #505C68;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-feature-settings: 'salt' on;
+}
+
+.badge-content {
+  background-color: #F7DABC;
+}
+
+.badge-steps { 
+  background-color: #FBF7D7;
+}
+
+.badge-a11y { 
+  background-color: #F7D9F8;
+}
+
+.badge-uxdesign { 
+  background-color: #C2EED3;
+}
+
+.badge-interaction { 
+  background-color: #C6D4EB;
+}
+
+
 /*
 .card .card-content {
     padding: var(--font-size-caption, 16px) var(--font-size-caption, 16px) 24px var(--font-size-caption, 16px);
