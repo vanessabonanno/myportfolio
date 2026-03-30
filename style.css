@@ -19,7 +19,13 @@ body {
     margin: 0; /* Rimuove il margine predefinito del browser */
     padding-left: 16px; /* Aggiunge spazio interno al body */
     padding-right: 16px; /* Aggiunge spazio interno al body */
+}
 
+.cover {
+    width: 100%;
+    
+    border-radius: 4px; 
+    margin-bottom: 32px;
 }
 
 .heading {
@@ -112,6 +118,15 @@ a:active {
     text-decoration: none;
 }
 
+
+.about-body-resume a {
+    color: #2F5279;
+    font-family: "Quattrocento Sans";
+    font-size: 14px;
+    font-style: normal;
+}
+
+
 .text-strong {
     font-weight: 700;
     color: #354E64;
@@ -121,13 +136,32 @@ a:active {
     font-style: normal;
 } 
 
+h2 {
+    font-weight: 600;
+    color: #354E64;
+    font-size: 16px;
+    line-height: 150%; 
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+    margin-bottom: 1rem;
+} 
+
+.year {
+    color: #1B2833;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
 .nav-link {
     color: #1B2833;
     font-family: "Ubuntu Mono";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    /*line-height: 150%;  24px */
    
 }
 
@@ -233,6 +267,10 @@ li::marker {
     line-height: 110%; /* 22px */
 }
 
+.img-fluid {
+    border-radius: 24px;
+
+}
 
 .icon-arrow {
     fill:none;
@@ -278,7 +316,7 @@ li::marker {
 }
 
 .about-body p {
-    margin-bottom: 0; 
+    margin-bottom: 0.5rem; 
 }
 
 .chapters {
@@ -295,7 +333,6 @@ li::marker {
     border: 1px solid #B6C9DA;
     border-radius: 24px;
 }
-
 
 
 .img-static {
@@ -332,7 +369,6 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-
 }
 
 .paragraphs {
@@ -351,52 +387,64 @@ p {
 .about-body-resume {
     display: flex;
     padding-left: 24px;
+    padding-right: 40px;
     flex-direction: column;
     align-items: flex-start;
     gap: 3rem;
-    border-left: 1px solid #5e9c4f;
-
+    border-left: 1px solid #8CA9C5;
+    /* #5e9c4f; */
 }
 
-.paragraphs-resume > p {
-    color: #080F14;
+.about-body-resume p {
+    color: #2D3C49;
     /* Body_1 */
     font-family: "Quattrocento Sans";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
+    margin-bottom: 0.5rem;
 }
+
+.about-body-resume a {
+    color: #2F5279;
+    font-family: "Quattrocento Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    background-color: #EBF1F5;
+    text-decoration: none;
+
+}
+
 
 .spazio-resume {
     margin-bottom: 3rem;
 }
 
-.paragraphs > .spazio-resume > p {
-    color: #080F14;
-    /* Body_1 */
-    font-family: "Quattrocento Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    margin-bottom: 10px;
-}
+
 
 .riga-resume .heading {
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-/*
-strong {    
-    color: #316E26;
+
+.about-body-resume h3 {
+    font-weight: 600;
+    color: #354E64;
     font-size: 16px;
-    font-weight: 400;
     line-height: 150%; 
     font-family: "Quattrocento Sans";
     font-style: normal;
-} */
+    margin-bottom: 1rem;
+
+}
+
+
+/* ---- End of Section Resume  ---- */
+
 
 
 /*. ------- CARD ------- */
@@ -417,7 +465,7 @@ strong {
   gap: 12px;   
   padding: 16px;
   border-radius: 24px;
-  border: 1px solid #C6DCF0;
+  border: 1px solid #CCDBEB;
   background-color: #F6F9FB;
   /* responsive */
   width: 100%;           /* occupa tutto lo spazio della colonna */
@@ -491,6 +539,360 @@ strong {
 
 .badge-interaction { 
   background-color: #C6D4EB;
+}
+
+
+.img-presentation {
+    max-width: 1180px;
+}
+
+
+.img-cover {
+    width: 76%;
+    height: auto;
+}
+
+
+/* Nav Tabber element */
+#pills-tab {
+    display: flex;
+    width: auto;
+    padding: 0px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 32px;
+    border: 1px solid #CCDBEB; 
+    padding: 12px 16px;
+}
+
+/* MANTENERE Applichiamo la pillola a 360 gradi */
+.nav-pills .nav-link, 
+.nav-pills .nav-link:focus, 
+.nav-pills .nav-link:active, 
+.nav-pills .nav-link.active {
+    border-radius: 50px !important; /*  */
+    border: 1px solid #ffffff;  
+}
+
+
+/* PROVA NAV TABS */
+/* Cambia il colore della "pillola" attiva */
+.nav-pills .nav-link.active {
+    background-color: #F1F5F7; 
+    color: #2F5279;
+    border: 1px solid #6C9AC4; 
+}
+
+/* Cambia il colore del testo dei tab non selezionati */
+.nav-pills .nav-link {
+    color: #717383;
+}
+
+/* sezione annotation sotto tabs, immagini con bordi arrotondati */
+.borderimg {
+    border-radius: 24px;
+    border: 1px solid #CCDBEB;
+}
+
+.tab-link {
+    color: #4F769C;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.tab-content {
+    
+    padding: 0px;
+    
+}
+
+
+.tab-active {
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid #2F5279;
+    background: rgba(79, 118, 156, 0.06);
+}
+
+
+.tab-link-active {
+    color: #1B2833;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*
+.tab-link-active:hover {
+    color: #2F5279;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+} */
+
+.tab-link-active:active {
+    color: #9C4F8B;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.tab-link {
+    color: #1B2833;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.tab-link:hover {
+    color: #2F5279;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.tab-link:active {
+    color: #9C4F8B;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.annotation-box {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: #FBFDFD;
+    margin-bottom: 1rem;
+    margin-left: 0.75rem;  /* Corrisponde a 12px, valore standard del gutter Bootstrap 5 */
+    margin-right: 2rem;
+    width: fit-content;           /* Permette ai margini di rientrare correttamente */
+
+}
+
+
+
+/* ---------------- */
+
+/* --- VIDEO MASK ---*/
+.video-mask {
+    width: 100%;
+    height: auto;
+    max-width: 1180px;
+    border-radius: 24px; 
+    overflow: hidden; 
+}
+
+/* Contenitore per posizionamento */
+.video-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-element {
+    width: 100%;
+    display: block;
+}
+
+/* Overlay scuro per far risaltare il pulsante */
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 67, 92, 0.3); /* Scurisce leggermente il frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Il pulsante circolare */
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7); /* nero con trasparenza */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);*/
+}
+
+.video-container:hover .play-button {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Nasconde l'overlay quando il video parte */
+.video-container.is-playing .play-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.video-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #000;
+}
+
+.video-element {
+    width: 100%;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 67, 92, 0.3); /* Scurisce leggermente il frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    pointer-events: none; /* Il click "passa oltre" */
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 0 4px 20px rgba(0,0,0,0.4);*/
+}
+
+/* --- STATO: IN RIPRODUZIONE --- */
+.video-container.is-playing .play-overlay {
+    opacity: 0; /* Scompare tutto quando il video è attivo */
+}
+
+.video-container.is-playing .video-element {
+    filter: brightness(1); /* Video chiaro */
+}
+
+
+/* Video container */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #000;
+    cursor: pointer;
+}
+
+.video-element {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+
+/* Layer che copre tutto il video per intercettare il click */
+.video-click-shield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Lasciamo un piccolo spazio in basso (es. 40px) se vuoi usare i controlli nativi */
+    height: calc(100% - 40px); 
+    z-index: 5;
+    background: transparent;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 67, 92, 0.3); /* Scurisce leggermente il frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Sopra lo scudo */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* I click passano attraverso al click-shield */
+}
+
+/* Reset stili bottone */
+.play-button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s, opacity 0.3s;
+    z-index: 20;
+}
+
+/* --- ACCESSIBILITÀ: FOCUS VISIBILE --- */
+.play-button:focus-visible {
+    outline: 4px solid #ffffff;
+    outline-offset: 4px;
+    /*box-shadow: 0 0 0 8px rgba(181, 95, 161, 0.4); */
+}
+
+/* Quando il video è in play, il bottone deve essere cliccabile ma invisibile */
+.video-container.is-playing .play-overlay {
+    opacity: 0;
+    pointer-events: none; /* Rende il video cliccabile direttamente */
+}
+
+/* Per permettere alla tastiera di trovare il bottone anche se invisibile (opzionale) Se vuoi che il focus lo faccia riapparire:
+.play-button:focus {
+    opacity: 1 !important;
+} */
+
+/* Quando il video è in play, nascondiamo solo l'overlay scuro */
+.video-container.is-playing .play-overlay {
+    opacity: 0;
 }
 
 
@@ -600,6 +1002,10 @@ strong {
     max-height: 80%;
 }
 
+.img-size {
+    height: 200px;
+    color: #2F5279;
+}
 
 
 #vertical-card:hover > .card-body > #b {
@@ -667,11 +1073,10 @@ strong {
     color: #080F14;
     /* Body_1 */
     font-family: "Ubuntu Mono";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 80%; /* 24px */
-
 }
 
 
