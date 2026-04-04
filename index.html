@@ -50,16 +50,18 @@
              <!--   FINE NAVBAR MENU   -->
             </div>
 
-            <div class="col-8">
+            <div class="col-8 mb-4">
             <!-- ---------------------------- ABOUT SECTION ---------------------------- -->
-            <div>
+            <div >
               <div class="about-body">
-                <!-- <img src="assets/imgs/Frost_min.png" class="img-fluid img-static" alt="my first experiment with wacom tablet for Inktober2023"> -->
-              
+                <!-- <img src="" class="img-fluid img-static" alt="my first experiment with wacom tablet for Inktober2023"> -->
+                 <div class="col-12 col-md-8 col-lg-6 mb-4">
+                   <img src="assets/imgs/cover_me.png" class="img-fluid" alt="me, very very happy and grateful for being at Sexten and skiing!">
+                 </div>
+                 
                 <div class="paragraphs">
-
                   
-                  <p>My name is Vanessa and I am a product designer based in Udine, Italy. I provide accessible, user-centered and scalable digital experiences. My services include UX research, wireframing, design systems creation, prototyping, usability testing, user interface design, accessibility testing, composing mockups, and HTML and CSS development.</p>
+                  <p>My name is Vanessa and I am a Product designer based in Udine, Italy. I provide accessible, user-centered and scalable <a href="portfolio.html" target="_blank">digital experiences</a>. My services include UX research, wireframing, design systems creation, prototyping, usability testing, user interface design, accessibility testing, composing mockups, and HTML and CSS development.</p>
                   <p>I have been working at <a href="https://www.smc.it/homepage">SMC company</a> since January 2024 as a UX and UI designer, producing websites for corporate, public administration (PA), B2B, banking and insurance sectors, where accessibility, and compliance are essential. My work focuses on translating complex requirements into intuitive interfaces that balance business goals and user needs.</p>
                   <p>My core skills include:</p>
                   <ul>
@@ -74,8 +76,14 @@
                   </ul> 
 
                   <p>My career goal is to apply and expand the knowledge I acquired in interactive media, UX and UI design, multimedia and video editing, 3D modelling, graphic and sound design. I aim to contribute to multidisciplinary teams where strategy, creativity and technology intersect to create meaningful digital products.</p>
-                  <p>During my bachelor’s and master’s degree studies, I learned how to code, which allows me to collaborate effectively with developers and understand technical constraints from the early design stages. In my spare time, I find it fulfilling to film and edit videos, and I usually rely on open-source softwares for post-production. AGGIUNGER produzione musicale</p>
+                  <p>
+                    During my bachelor’s and master’s degree studies, I learned how to code, which allows me to collaborate effectively with developers and understand technical constraints from the early design stages. In my spare time, I find it fulfilling to film and edit videos, and I usually rely on open-source softwares for post-production (DaVinci Resolve). In the past I also explored music production: playing lots of musical instruments, I am able to record them and mix the audio on Ableton or Audacity, applying my technical background to the creative process of sound design.
+                  </p>
                   <p>Curious and open-minded, I am always eager to learn and I enjoy discovering new approaches to transform ideas into real, tangible experiences. I find great value in drawing, whether on paper or digitally: for me, it is both a relaxing practice and a powerful creative way to explore ideas in ways that words sometimes cannot capture. Recently, I am practicing with photographic composition using film cameras, and in my spare time I like to unwind by watching a good movie and crocheting. Thanks for reading and have a good day, Vanessa!</p>
+
+                  <div class="wavy-flower-divider">
+                      <span>🌻</span>
+                  </div>
 
                 </div>
               </div>
@@ -91,5 +99,29 @@
 	<script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="function.js"></script>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const currentPath = window.location.pathname.split("/").pop();
+      const bodySection = document.body.getAttribute('data-section');
+
+      navLinks.forEach(link => {
+          const linkPath = link.getAttribute('href');
+
+          // Caso 1: Corrispondenza esatta del file
+          if (linkPath === currentPath) {
+              link.classList.add('active');
+          } 
+          
+          // Caso 2: Siamo in una sottopagina (grazie al data-section sul body)
+          if (bodySection === 'portfolio' && linkPath === 'portfolio.html') {
+              link.classList.add('active');
+          }
+      });
+  });
+  </script>
+
   </body>
 </html>

@@ -92,7 +92,7 @@
 -->
 
               <div class="row riga-resume">          
-                <div class="col">
+                <div class="col-lg-6">
                   <h2 class="heading">Career</h2>
                   <div class="about-body-resume">
                     
@@ -140,13 +140,12 @@
                         <p>Customer relationship, service and counter assistance, ice cream preparation and sales, warehouse support and stock management, cashier operations,  independent work organization and task management, operation of ice cream production machinery (e.g., ice cream pasteurizer), teamwork. <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x477bcbb01686ba3f:0x1845f1ff3c224d73?sa=X&ved=1t:8290&ictx=111" target="_blank">Passate a trovarci!</a></p>
                        
                       </div>
-                      
-                      
-
+                     
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                
+                <div class="col-lg-6">
                   <h1 class="heading">Studies</h1>
                   <div class="about-body-resume">      
                     <div class="paragraphs">
@@ -175,8 +174,8 @@
                         </div>
 
                         <div class="spazio-resume">
-                        <img src="assets/imgs/avatar.JPG" class="img-fluid" alt="a delicious gelato cone with three scoops, made by me">
-                      </div>
+                          <img src="assets/imgs/avatar.JPG" class="img-fluid" alt="a delicious gelato cone with three scoops, made by me">
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -197,6 +196,27 @@
 	<script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="function.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const currentPath = window.location.pathname.split("/").pop();
+        const bodySection = document.body.getAttribute('data-section');
+
+        navLinks.forEach(link => {
+            const linkPath = link.getAttribute('href');
+
+            // Caso 1: Corrispondenza esatta del file
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            } 
+            
+            // Caso 2: Siamo in una sottopagina (grazie al data-section sul body)
+            if (bodySection === 'portfolio' && linkPath === 'portfolio.html') {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
  </body>
 </html>
 

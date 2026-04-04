@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200" rel="stylesheet" />
   </head>
-  <body>
+  <body data-section="portfolio">
     <main>
       
         <div class="container-fluid container-fluid-max-xl mt-4">
@@ -72,7 +72,7 @@
                   <p> <span class="text-strong">Scope:</span> Practical design resources for learning and teaching UI/UX</p>
                 </div>
 
-                <img src="assets/imgs/bookUI/bookkk.png" class="img-cover" alt="mockup of the web system redesign">
+                <img src="assets/imgs/project cover/card-cover-3.png" class="img-cover" alt="mockup of the web system redesign">
 
                 
                 <div class="about-body chapters">
@@ -99,8 +99,8 @@
                   
                   <div>
                     <h2 class="text-strong">Another opportunity</h2>
-                    <p>My passion for crafting, drawing and design eventually merged with my annual participation in <a href="https://inktober.com/" target="_blank" rel="noopener noreferrer">Inktober</a>! For years, I’ve used their prompts to challenge myself in the production of high-fidelity wireframes and UI components, alongside my traditional <a href="https://www.instagram.com/vein_brudal/" target="_blank" >ink drawings</a>. This year, I decided to take it a step further: Why not turn these prompts into <strong>UX-UI lessons</strong>? </p>
-                    <p>  That spark led to the creation of "Squeaky Hints", a minimal and funny collection of actionable design insights across four key themes - you can find them below in the next chapter. I hope these hints can serve as a practical guide for anyone looking to dive into the world of UX/UI design, offering clear and concise advice to navigate the complexities of creating user-centered digital experiences, also perhaps prompting further reflection on our design choices! 🌻🐦‍⬛️</p>
+                    <p>My passion for crafting, drawing and design eventually merged with my annual participation in <a href="https://inktober.com/" target="_blank" rel="noopener noreferrer">Inktober</a>! For years, I’ve used their prompts to challenge myself in the production of high-fidelity wireframes and UI components, alongside my traditional <a href="https://www.instagram.com/vein_brudal/" target="_blank" >ink drawings</a>. This year, I decided to take it a step further: <strong>Why not turn some of these prompts into UX-UI chibi|cutie|puccipucci but also useful and practical clues</strong>? </p>
+                    <p>  That spark led to the creation of <strong>"Squeaky Hints"</strong>, a minimal and funny collection of actionable design insights. I selected - for this year - four key themes and you can find them below in the next chapter. I hope these hints can serve as a practical guide for anyone looking to dive into the world of UX/UI design, offering clear and concise advice to navigate the complexities of creating user-centered digital experiences, also perhaps prompting further reflection on our design choices! 🌻🐦‍⬛️</p>
                   </div>
                   
                   <img src="assets/imgs/bookUI/inkt.png" class="img-fluid" alt="Figma mobile version of Dealer Portal">
@@ -274,6 +274,27 @@
 	<script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="function.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const currentPath = window.location.pathname.split("/").pop();
+        const bodySection = document.body.getAttribute('data-section');
+
+        navLinks.forEach(link => {
+            const linkPath = link.getAttribute('href');
+
+            // Caso 1: Corrispondenza esatta del file
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            } 
+            
+            // Caso 2: Siamo in una sottopagina (grazie al data-section sul body)
+            if (bodySection === 'portfolio' && linkPath === 'portfolio.html') {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
   </body>
 </html>
 
