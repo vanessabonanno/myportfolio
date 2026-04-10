@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,16 +121,27 @@
               </div>
               
 
-              <div class="row details">
-                <h2 class="text-strong">
+             <!-- Video Section-->   
+              <div>
+               <h2 class="text-strong">
                     Quick overview and core interactions
                 </h2>
-                <!-- Video shot navigation / interactions -->   
-                 <div class="video-mask"> 
-                  <video controls class="video-mask">
-                  <source src="assets/videos/Esse_navigation_interactions.mov" type="video/mp4" alt="Brief presentation of the navigation and interactions of the redesigned web app 'Esse Diagnostic Systems'"/>
-                 </div>
-              </div>
+                    <div class="video-container video-mask">
+                        <video class="video-element" id="nexusVideo">
+                            <source src="assets/videos/Esse_navigation_interactions.mov" type="video/mp4" alt="Brief presentation of the navigation and interactions of the Esse portal">
+                        </video>
+                        
+                        <div class="video-click-shield"></div>
+
+                        <div class="play-overlay">
+                            <button class="play-button" aria-label="Play video. Avvia video"> 
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 3L19 12L5 21V3Z" fill="white"/>
+                                </svg>
+                              </button>
+                        </div>
+                    </div>
+                </div>
             
 
             <!-- Snapshot di UI design del progetto + annotazioni-->

@@ -6,7 +6,6 @@
     font-style: normal;
   }
   
-/* ----------- */
 
 body {
     background: #F6F9FB;
@@ -38,7 +37,6 @@ body {
 }
 
 /* --- NAVBAR --- */
-
 .burger-icon {
     display: none;
 }
@@ -48,12 +46,39 @@ body {
     display: flex;
     width: 136px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 1.00rem;
     position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 24px;
+    margin-top: 24px; 
+    padding-top: 0px; 
+    
+    align-self: flex-start;
+    
+}
+
+
+
+.simple-menu a:focus-visible {
+    outline: 1px dashed #2F5279 !important;
+    outline-offset: 4px; /* offset ridotto per stare dentro la navbar */
+    box-shadow: none !important;
+    outline: 2px dashed #3F51B5 !important;
+    border-radius: 8px !important; 
+    outline-offset: 2px;
+}
+
+a:focus-visible {
+    /* Cancella il bordo interno azzurrino */
+    box-shadow: none !important;
+    /* Mantiene solamente quello dashed (blu scuro) */
+    outline: 2px dashed #3F51B5 !important; 
+    /* Lo rende tondo */
+    border-radius: 8px !important;
+    /* Aggiunge un po' di spazio tra il testo e il bordo (opzionale, ma migliora la leggibilità) */
+    outline-offset: 4px;
 }
 
 #sideNav {
@@ -120,7 +145,6 @@ a:active {
 
 
 /* about  */
-
 a {
 color: #2F5279;
     font-family: "Quattrocento Sans";
@@ -129,7 +153,6 @@ color: #2F5279;
     line-height: 150%;
     background-color: #EBF1F5;
     text-decoration: none;
-
 }
 
 
@@ -173,7 +196,6 @@ h2 {
     font-weight: 400;
 }
 
-
 .nav-link {
     color: #1B2833;
     font-family: "Ubuntu Mono";
@@ -181,7 +203,6 @@ h2 {
     font-style: normal;
     font-weight: 400;
     /*line-height: 150%;  24px */
-   
 }
 
 .nav-link:hover {
@@ -202,7 +223,6 @@ h2 {
     line-height: 150%; /* 24px */
 }
 
-
 nav ul {
     list-style-type: none;
     padding-left: 0; 
@@ -212,7 +232,6 @@ nav ul {
 .nav-link.active {
     color: #9C4F8B !important; /* Il blu dello screenshot */
 }
-
 
 
 .go-back {
@@ -248,8 +267,6 @@ li::marker {
 
 
 /*   BUTTONS   */
-
-
 .button-outline {
     display: inline-flex;
     padding: 6px 14px;
@@ -266,7 +283,6 @@ li::marker {
     line-height:  125%;
     text-decoration: none;
 }
-
 
 .button-outline:hover {
     display: inline-flex;
@@ -308,6 +324,7 @@ li::marker {
 /* Stile di Focus  */
 .button-outline:focus-visible {
     outline: 2px dashed #2F5279;
+    outline-offset: 2px;
     border-radius: 24px;
 }
 
@@ -325,7 +342,6 @@ li::marker {
     fill: #9C4F8B;
 }
 
-
 .button-arrow {
     display: flex;
     padding: 8px;
@@ -336,7 +352,6 @@ li::marker {
     color: #4F769C;
     background-color: transparent;
 }
-
 
 /* 2. HOVER: Quando passi sul BOTTONE, l'ICONA cambia */
 .button-arrow:hover .icon-button {
@@ -353,6 +368,7 @@ li::marker {
 .a-notextdecoration {
     text-decoration: none;
 }
+
 
 
 
@@ -522,11 +538,8 @@ p {
 
 
 
-/*. ------- CARD ------- */
-
-
-/* card Horizontal */
-/* ------- CARD HORIZONTAL (Hero Card) ------- */
+/* ------- PORTFOLIO CARD ------- */
+/* ------- CARD HORIZONTAL (Card progetto più rilevante) ------- */
 
 .card-horizontal {
     display: flex;
@@ -541,21 +554,6 @@ p {
     transition: all 0.3s ease;
 }
 
-/* Sezione Immagine */
-.card-horizontal-img {
-    flex: 1;             /* Prende metà dello spazio */
-    max-width: 450px;    /* Impedisce all'immagine di diventare enorme */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-horizontal-img img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* Mantiene le proporzioni del tablet/mockup */
-}
-
 /* Sezione Testo */
 .card-horizontal-body {
     flex: 1;
@@ -566,7 +564,7 @@ p {
 }
 
 .card-horizontal-title {
-    font-size: 1.7rem;     /* Più grande delle card verticali essendo la prima */
+    font-size: 1.7rem;    
     font-family: "Quattrocento Sans", sans-serif;
     line-height: 1.2;
     margin: 0;
@@ -592,10 +590,6 @@ p {
         gap: 24px;
     }
     
-    .card-horizontal-img {
-        max-width: 100%; /* L'immagine prende tutto il piano su mobile */
-    }
-    
     .card-horizontal-title {
         font-size: 1.5rem;
         line-height: 1.4;
@@ -610,6 +604,78 @@ p {
 }
 
 
+/* --- CARD ORIZZONTALE DESKTOP --- */
+.card-horizontal {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid #EBF0F5;
+    border-radius: 24px;
+    padding: 32px !important;
+    gap: 32px;
+}
+
+/* --- TESTO 3/8 --- */
+.card-horizontal-body {
+    flex: 0 0 calc(37.5% - 16px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+
+
+
+/* --- BOX IMMAGINE 5/8 --- */
+.card-horizontal-img {
+    flex: 5; /* Proporzione fill 5/8 */
+    display: flex;
+}
+
+.card-horizontal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Effetto figma fill */
+    border-radius: 16px;
+}
+
+
+
+
+@media (max-width: 1100px) {
+    /* Mantiene stile unico della card ma cambia direzione */
+    .card-horizontal {
+        flex-direction: column;
+        padding: 32px !important; /* Mantiene padding originale */
+        gap: 24px;
+    }
+
+    /* Immagine a tutta larghezza sopra */
+    .card-horizontal-img {
+        width: 100%;
+        flex: none;
+    }
+
+    .card-horizontal-img img {
+        width: 100%;
+        height: auto;
+        max-height: 400px; /* Altezza massima per non farla troppo lunga */
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    /* Testo a tutta larghezza sotto */
+    .card-horizontal-body {
+        width: 100%;
+        flex: none;
+        padding: 0;
+    }
+}
+
+
+
+
 /* ------ CARD VERTICAL ------ */
 
 .card-vertical {
@@ -619,8 +685,7 @@ p {
     display: flex;            /* Attiva gap */
     flex-direction: column;   /* Mette immagine sopra e testo sotto */
     gap: 6px;  
-    align-items: flex-start; 
-              
+    align-items: flex-start;           
 }
 
 .card-body {
@@ -657,6 +722,28 @@ p {
 }
 
 
+/* Focus dashed per card vertical */
+.link-card {
+    background: transparent !important;
+    display: block; /* Manteniamo block per il focus */
+    text-decoration: none !important;
+    border-radius: 24px;
+    outline: none !important; /* Ammazziamo l'outline che non sa curvare */
+}
+
+.link-card:focus {
+    outline: none;
+    border-radius: 32px;
+}
+
+.link-card:focus-visible {
+    outline: 2px dashed #2F5279 !important;
+    outline-offset: 4px;
+    border-radius: 30px;
+}
+
+
+
 /* vertical card image section */
 .card-img-other {
     display: flex;
@@ -670,7 +757,6 @@ p {
     border: 1px solid #EBF0F5;
     background: #FFF;
 }
-
 
 
 .annotation.list {
@@ -784,7 +870,7 @@ p {
     padding: 12px 16px;
 }
 
-/* MANTENERE Applichiamo la pillola a 360 gradi */
+/*  */
 .nav-pills .nav-link, 
 .nav-pills .nav-link:focus, 
 .nav-pills .nav-link:active, 
@@ -807,6 +893,12 @@ p {
     color: #717383;
 }
 
+
+/* link attivo */
+.nav-pills .nav-link.active {
+    color: #2F5279 !important;
+}
+
 /* sezione annotation sotto tabs, immagini con bordi arrotondati */
 .borderimg {
     border-radius: 24px;
@@ -822,9 +914,7 @@ p {
 }
 
 .tab-content {
-    
     padding: 0px;
-    
 }
 
 
@@ -914,8 +1004,51 @@ p {
 }
 
 
+/* ------- Responsività Card Sezione tabs carosello ------- */
 
-/* ---------------- */
+
+
+
+/* Dai 1400px in giù, tutto diventa una colonna singola */
+@media (max-width: 1400px) {
+    
+    /* 1. La riga principale perde la funzione di "fianco a fianco" */
+    .row.align-items-start.mb-5.gx-0 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* 2. Entrambe le colonne (immagine e annotazioni) diventano larghe al 100% */
+    .col, 
+    .col-auto.px-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        margin-bottom: 1rem !important; /* Spazio verticale tra le due sezioni */
+    }
+
+    /* 3. Distanza tra l'immagine e l'inizio delle card */
+
+    /* 4. Allineamento delle card: togliamo i padding laterali della colonna-auto 
+       perché ora deve essere allineata ai bordi dell'immagine */
+    .col-auto.px-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* 5. Le card annotation si allargano a tutto schermo */
+    .annotation-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important; /* Forza l'occupazione totale */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Se hai usato gap-3 nel d-flex delle card, le terrà già separate verticalmente */
+}
+
+
 
 /* --- VIDEO MASK ---*/
 .video-mask {
@@ -1093,7 +1226,7 @@ p {
 
 /* --- ACCESSIBILITÀ: FOCUS VISIBILE --- */
 .play-button:focus-visible {
-    outline: 4px solid #ffffff;
+    outline: 4px dashed #ffffff;
     outline-offset: 4px;
     /*box-shadow: 0 0 0 8px rgba(181, 95, 161, 0.4); */
 }
@@ -1164,14 +1297,70 @@ p {
 
 .avatar{
   vertical-align: middle;
-  
   border-radius: 24%;
 }
 
-.card-resume{
+.box-resume{
     background-color: transparent;
     border-color: transparent;
+    gap: 16px;
 }
+
+
+.card-resume {
+    padding: 16px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 24px;
+    background: #FFF;
+    border: 1px solid #EBF0F5;
+    display: flex;            /* Attiva gap */
+    flex-direction: column;   /* Mette immagine sopra e testo sotto */
+    gap: 8px;
+    align-items: flex-start; 
+    width: fit-content;
+}
+
+/* 1. Forza l'altezza uguale e aggiunge la distanza (gap) */
+.box-resume .row {
+    display: flex;
+    align-items: stretch; 
+    gap: 20px; /* <--- Ecco la distanza tra avatar e testo */
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* 2. Box img Avatar */
+.box-resume .col-md-4 {
+    flex: 0 0 150px; /* larghezza fissa  */
+    border-radius: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0; /* togliere eventuali padBootstrap */
+}
+
+/* 3. L'immagine dentro: non si schiaccia mai */
+.box-resume .avatar {
+    width: 100%;
+    height: 100%;
+    padding: 0; 
+}
+
+/* 4. Box del Testo (Colonna Destra) */
+.box-resume .col-md-8 {
+    flex: 1; /* Prende tutto lo spazio rimanente dopo il gap */
+    width: auto;
+    padding: 0; /* Puliamo i padding per precisione */
+}
+
+/* Assicurati che la card interna non abbia margini che sballano tutto */
+.card-resume {
+    height: 100%;
+    margin: 0;
+}
+
 
 .testo-dati-personali p{
     color: #080F14;
