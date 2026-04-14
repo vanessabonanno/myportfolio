@@ -29,12 +29,14 @@ body {
 
 .heading {
     color: #1B2832;
-    font-family: "Ubuntu Mono";
-    font-size: 18px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
+    margin-block-end: 0px;
 }
+
 
 /* --- NAVBAR --- */
 .burger-icon {
@@ -44,7 +46,6 @@ body {
 .simple-menu {
     color: #1B2833;
     display: flex;
-    width: 136px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -94,12 +95,6 @@ a:focus-visible {
     height: 100vh;
   }
 
-  @media (min-width: 992px) {
-    .navbar-expand-lg {
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-    }
-  }
 
 .box {
     display: flex;
@@ -251,7 +246,7 @@ li::marker {
 }
 
 .about-section li {
-    line-height: 200%; /* 24px */
+    line-height: 140%; /* 24px */
 
 }
 
@@ -541,6 +536,13 @@ p {
 /* ------- PORTFOLIO CARD ------- */
 /* ------- CARD HORIZONTAL (Card progetto più rilevante) ------- */
 
+.title-card-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
 .card-horizontal {
     display: flex;
     flex-direction: row; /* Immagine a sx, testo a dx */
@@ -583,7 +585,7 @@ p {
 
 
 /* --- RESPONSIVE (REFLOW) --- */
-@media (max-width: 992px) {
+@media (max-width: 762px) {
     .card-horizontal {
         flex-direction: column; /* Diventa verticale su tablet/mobile */
         padding: 24px;
@@ -596,6 +598,7 @@ p {
         margin-bottom: 2px;
     }
 }
+
 
 
 /* portfolio sezione row di card verticali, spaziatura */
@@ -826,6 +829,10 @@ p {
   font-feature-settings: 'salt' on;
 }
 
+.badge-card {
+  background-color: #70a1cd33;
+}
+
 .badge-content {
   background-color: #F7DABC;
 }
@@ -997,9 +1004,9 @@ p {
     border-radius: 24px;
     background: #FBFDFD;
     margin-bottom: 1rem;
-    margin-left: 0.75rem;  /* Corrisponde a 12px, valore standard del gutter Bootstrap 5 */
     margin-right: 2rem;
     width: fit-content;           /* Permette ai margini di rientrare correttamente */
+    border: 0.3px solid #4f769c1d;
 
 }
 
@@ -1254,8 +1261,6 @@ p {
 }
 
 
-
-
 .card-content .text-box {
     display: flex;
     flex-direction: column;
@@ -1325,7 +1330,7 @@ p {
 .box-resume .row {
     display: flex;
     align-items: stretch; 
-    gap: 20px; /* <--- Ecco la distanza tra avatar e testo */
+    gap: 20px; /* distanza tra avatar e testo */
     margin-right: 0;
     margin-left: 0;
 }
@@ -1338,7 +1343,7 @@ p {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 0; /* togliere eventuali padBootstrap */
+    padding: 0; /* togliere eventuali pad Bootstrap */
 }
 
 /* 3. L'immagine dentro: non si schiaccia mai */
@@ -1352,10 +1357,9 @@ p {
 .box-resume .col-md-8 {
     flex: 1; /* Prende tutto lo spazio rimanente dopo il gap */
     width: auto;
-    padding: 0; /* Puliamo i padding per precisione */
+    padding: 0; /* togliere i padding per precisione */
 }
 
-/* Assicurati che la card interna non abbia margini che sballano tutto */
 .card-resume {
     height: 100%;
     margin: 0;
@@ -1379,32 +1383,41 @@ p {
 }
 
 
-/* Media query for mobile screens */
-@media only screen and (max-width: 600px){
-    /* body {
-        
-      }
-    Show the burger menu icon */
-    .burger-icon {
-      display: block;
-    }
 
-    .simple-menu {
-        display: none;
-       }
-    }
 
-    .vintage-divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 40px 0;
-    color: #fff6c6; /* Un grigio leggero */
+.headingfirst {
+    margin-bottom: 0px !important;
 }
 
 
-/*  Cornicetta  */
+.rolescope {
+    gap: 4px !important; 
+}
 
+
+/* Mobile (767px in giù) */
+@media only screen and (max-width: 767px) {
+    
+    /* Forza il body e il container a non avere spazi bianchi o grigi esterni */
+    .container-fluid, .row, .col-12 {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Il contenuto bianco deve toccare i bordi dello schermo */
+    .main-body {
+        width: 100%;
+        margin: 0 !important;
+        border-radius: 0 !important; /* Toglie arrotondamenti se presenti */
+    }
+
+    
+}
+
+
+
+/*  Cornicetta  */
 .wavy-flower-divider {
     display: flex;
     align-items: center;
@@ -1435,3 +1448,95 @@ p {
     /* Un piccolo tocco di trasparenza al fiore se vuoi che sia meno "shoccante" rispetto all'onda chiara */
     opacity: 0.9; 
 }
+
+
+
+
+
+/* --- COMPORTAMENTO SU DESKTOP --- */
+/* Nascondiamo l'icona hamburger su schermi larghi */
+.simple-menu .iconburger {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* All'interno della media query 767px */
+    body {
+        /* Spinge giù tutto il contenuto di 80px per farlo apparire sotto la navbar fixed */
+        padding-top: 94px !important; 
+    }
+    
+  .simple-menu {
+    width: 100vw !important; 
+    display: block !important; 
+    
+    /* Regole forzate per incollare tutto al top */
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important; 
+    
+    /* Alziamo lo z-index al massimo per essere certi che passi sopra a OGNI immagine */
+    z-index: 9999 !important; 
+    background-color: #ffffff !important; 
+    /* box-shadow: 0 2px 10px #6490bd22;  */
+    border-bottom: 0.3px solid #4F759C;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+
+  /* --- IL RESTO DEL CODICE RIMANE IDENTICO A PRIMA --- */
+  .simple-menu .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px 15px 0; /* Aggiunto un po' di padding destro per staccare l'icona dal bordo */
+  }
+
+  .simple-menu h1.heading,
+  .simple-menu span.heading { 
+    margin-bottom: 0; 
+    margin-left: 15px; /* Spazio per staccare il nome dal bordo sinistro */
+  }
+
+  .simple-menu .iconburger {
+    display: block;
+    font-size: 28px;
+    text-decoration: none;
+    color: #333; 
+    cursor: pointer;
+    background-color: transparent;
+  }
+/* 1. Stato CHIUSO (e transizione di CHIUSURA) */
+  #myLinks {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 15px;
+    /* Transizione per la chiusura: più veloce (0.3s) e con un "ease-in" per non scattare */
+    transition: max-height 0.3s ease-in, opacity 0.2s ease-out;
+  }
+
+  /* 2. Stato APERTO (e transizione di APERTURA) */
+  .simple-menu.responsive #myLinks {
+    max-height: 500px; /* Deve essere maggiore del contenuto */
+    opacity: 1;
+    padding: 15px;
+    /* Transizione per l'apertura: leggermente più lenta (0.5s) per un effetto fluido */
+    transition: max-height 0.5s ease-out, opacity 0.4s ease;
+  }
+  .simple-menu.responsive .box,
+  .simple-menu.responsive .year {
+    margin-top: 0px;
+  }
+}
+
+#myTopnav .box {
+    padding-bottom: 0.5rem;
+}
+
+

@@ -21,41 +21,44 @@
   </head>
   <body>
     <main>
-      
-        <div class="container-fluid container-fluid-max-xl mt-4">
+        <div class="container-fluid container-fluid-max-xl">
           <div class="row">
-            <div class="col-4">
-              
-              <!--   NAVBAR MENU   -->
-              
-              <nav class="simple-menu">
-                <h1 class="heading">Vanessa</h1>
-                <div class="box">
-                 <ul class="link-list">
-                   <li><a class="nav-link" href="index.html">About</a></li>
-                   <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                   <li><a class="nav-link" href="resume.html">Resume</a></li>
-                 </ul>
+            <div class="col-12 col-md-4">
+            
+              <!--   NAVBAR MENU new - responsive  -->
+              <nav class="simple-menu" id="myTopnav">
+                <div class="nav-header">
+                  <span class="heading">Vanessa</span>
+                  <a href="javascript:void(0);" class="iconburger" onclick="toggleMenu()">
+                    &#9776;
+                  </a>
                 </div>
-                <ul class="box">
-                 <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                 <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                 <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
-                 <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
-               <div class="year">
-                   @2026
-               </div>
+                
+                <div id="myLinks">
+                  
+                  <ul class="box">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                  </ul>
+                  
+                  <ul class="box">
+                  <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                  <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
+                  <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  </ul>
+                <div class="year">
+                    @2026
+                </div>
+                </div>
               </nav>
-             <!--   FINE NAVBAR MENU   -->
+               <!-- FINE NAVBAR MENU NEW -->
             </div>
 
             <!-- ---------------------------- ABOUT SECTION ---------------------------- -->
           
-            <div class="col-8">
-
-
-
+            <div class="col-12 col-md-8 mt-4">
               <div class="card mb-3 box-resume" >
                 <div class="row box-resume-row">
                   <div class="col-md-4" style="max-width: 540px;">
@@ -74,7 +77,6 @@
                 </div>
               </div>
 
-
               <!--
               <div class="row" >
                 <div class="col-auto">
@@ -91,8 +93,8 @@
               </div>
 -->
 
-              <div class="row riga-resume">          
-                <div class="col-lg-6">
+              <div class="row riga-resume gy-5">          
+                <div class="col-lg-6 ">
                   <h2 class="heading">Career</h2>
                   <div class="about-body-resume">
                     
@@ -217,6 +219,20 @@
         });
     });
     </script>
+
+    <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "simple-menu") {
+        // Se il menu è chiuso, aggiungiamo la classe "responsive" per aprirlo
+        x.className += " responsive";
+      } else {
+        // Se è già aperto, la togliamo per richiuderlo
+        x.className = "simple-menu";
+      }
+    }
+  </script>
+
  </body>
 </html>
 

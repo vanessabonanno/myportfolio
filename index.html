@@ -21,36 +21,42 @@
   </head>
   <body>
     <main>
-      
-        <div class="container-fluid container-fluid-max-xl ">
+        <div class="container-fluid container-fluid-max-xl">
           <div class="row">
-            <div class="col-4">
-              
-              <!--   NAVBAR MENU   -->
-              
-              <nav class="simple-menu">
-                <h1 class="heading">Vanessa</h1>
-                <div class="box">
-                 <ul class="link-list">
-                   <li><a class="nav-link" href="index.html">About</a></li>
-                   <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                   <li><a class="nav-link" href="resume.html">Resume</a></li>
-                 </ul>
+            <div class="col-12 col-md-4">
+            
+              <!--   NAVBAR MENU new - responsive  -->
+              <nav class="simple-menu" id="myTopnav">
+                <div class="nav-header">
+                  <span class="heading">Vanessa</span>
+                  <a href="javascript:void(0);" class="iconburger" onclick="toggleMenu()">
+                    &#9776;
+                  </a>
                 </div>
-                <ul class="box">
-                 <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                 <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                 <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
-                 <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
-               <div class="year">
-                   @2026
-               </div>
+                
+                <div id="myLinks">
+                  
+                  <ul class="box">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                  </ul>
+                  
+                  <ul class="box">
+                  <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                  <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
+                  <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  </ul>
+                <div class="year">
+                    @2026
+                </div>
+                </div>
               </nav>
-             <!--   FINE NAVBAR MENU   -->
+               <!-- FINE NAVBAR MENU NEW -->
             </div>
 
-            <div class="col-8 mb-4">
+            <div class="col-8 mb-4  col-12 col-md-8  p-0 ">
             <!-- ---------------------------- ABOUT SECTION ---------------------------- -->
             <div >
               <div class="about-body mt-4">
@@ -62,7 +68,7 @@
                 <div class="paragraphs">
                   
                   <p>My name is Vanessa and I am a Product designer based in Udine, Italy. I provide accessible, user-centered and scalable <a href="portfolio.html" target="_blank">digital experiences</a>. My services include UX research, wireframing, design systems creation, prototyping, usability testing, user interface design, accessibility testing, composing mockups, and HTML and CSS development.</p>
-                  <p>I have been working at <a href="https://www.smc.it/homepage">SMC company</a> since January 2024 as a UX and UI designer, producing websites for corporate, public administration (PA), B2B, banking and insurance sectors, where accessibility, and compliance are essential. My work focuses on translating complex requirements into intuitive interfaces that balance business goals and user needs.</p>
+                  <p>I work at <a href="https://www.smc.it/homepage">SMC company</a> since January 2024 as a UX and UI designer, producing websites for corporate, public administration (PA), B2B, banking and insurance sectors, where accessibility, and compliance are essential. My work focuses on translating complex requirements into intuitive interfaces that balance business goals and user needs.</p>
                   <p>My core skills include:</p>
                   <ul>
                     <li>User research (interviews, surveys, usability testing)</li>
@@ -121,6 +127,19 @@
           }
       });
   });
+  </script>
+
+  <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "simple-menu") {
+        // Se il menu è chiuso, aggiungiamo la classe "responsive" per aprirlo
+        x.className += " responsive";
+      } else {
+        // Se è già aperto, la togliamo per richiuderlo
+        x.className = "simple-menu";
+      }
+    }
   </script>
 
   </body>

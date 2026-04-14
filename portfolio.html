@@ -20,57 +20,42 @@
   </head>
   <body>
     <main>
-       
-        <!-- <div class="container-fluid ms-4 me-4 mt-4"> -->
-        <div class="container-fluid container-fluid-max-xl mt-4">
+       <div class="container-fluid container-fluid-max-xl">
           <div class="row">
-            <div class="col-4">
-             
-              <!--   NAVBAR MENU   -->
-              
-              <nav class="simple-menu">
-                <h1 class="heading">Vanessa</h1>
-                <div class="box">
-                 <ul class="link-list">
-                   <li><a class="nav-link" href="index.html">About</a></li>
-                   <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                   <li><a class="nav-link" href="resume.html">Resume</a></li>
-                 </ul>
+            <div class="col-12 col-md-4">
+            
+              <!--   NAVBAR MENU new - responsive  -->
+              <nav class="simple-menu" id="myTopnav">
+                <div class="nav-header">
+                  <span class="heading">Vanessa</span>
+                  <a href="javascript:void(0);" class="iconburger" onclick="toggleMenu()">
+                    &#9776;
+                  </a>
                 </div>
-                <ul class="box">
-                 <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                 <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                 <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
-                 <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
-               <div class="year">
-                   @2026
-               </div>
+                
+                <div id="myLinks">
+                  
+                  <ul class="box">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                  </ul>
+                  
+                  <ul class="box">
+                  <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                  <li><a class="nav-link" href="mailto:vanessa.bonanno2@gmail.com">Email</a></li>
+                  <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  </ul>
+                <div class="year">
+                    @2026
+                </div>
+                </div>
               </nav>
-             <!--   FINE NAVBAR MENU   -->
-	       
-       <div class="collapse navbar-collapse" id="navbarNav">
-		    <ul class="navbar-nav">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Features</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Pricing</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
-		      </li>
-		    </ul>
-	          </div>
-		      
-              </nav>
-             <!--   FINE NAVBAR MENU   -->
+               <!-- FINE NAVBAR MENU NEW -->
             </div>
 
-            <div class="col-8 sezione-card">
+            <div class="col-12 col-md-8 sezione-card mt-4">
             <!-- ---------------------------- CARD SECTION ---------------------------- -->
               <div>
                 <!-- HORIZONTAL CARD grande -->
@@ -80,18 +65,25 @@
                     </div>
 
                     <div class="card-horizontal-body">
+                      <div class="title-card-horizontal">
                         <h2 class="card-horizontal-title">Predictive maintenance ecosystem redesign</h2>
-                        <p class="card-horizontal-text">
-                            This strategic redesign transforms a <strong>complex and outdated</strong> diagnostic platform into an intuitive and scalable digital ecosystem. Through a comprehensive UX audit, I developed a user-centric interface that prioritizes <strong>operational efficiency</strong> across high-density technical infrastructures. This approach ensures <strong>structural clarity</strong> while supporting mission-critical decision-making.                
-                       </p>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="annotation-badge-style badge-card text-nowrap">UX research</span>
+                          <span class="annotation-badge-style badge-card text-nowrap">Interface redesign</span> 
+                        </div>
+                      </div>
+                      <p class="card-horizontal-text">
+                          Transforming a <strong>complex and outdated</strong> diagnostic platform into an intuitive and scalable digital ecosystem. </p>
+                      
                         
-                        <a class="button-outline" href="web app redesign.html" >
-                            Discover the redesign
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-button">
-                            <path d="M13.0907 6.60036V17.4007C13.0911 17.51 13.1204 17.6172 13.1755 17.7107C13.2306 17.8042 13.3094 17.8804 13.4035 17.9312C13.4975 17.982 13.6033 18.0054 13.7093 17.9989C13.8153 17.9925 13.9177 17.9564 14.0052 17.8945L21.5824 12.4943C21.8965 12.2705 21.8965 11.7317 21.5824 11.5073L14.0052 6.10715C13.9178 6.04464 13.8155 6.00798 13.7093 6.00116C13.6031 5.99434 13.4971 6.01762 13.4028 6.06845C13.3085 6.11929 13.2296 6.19576 13.1746 6.28953C13.1196 6.38331 13.0906 6.49081 13.0907 6.60036ZM20.2267 12.0005L14.2564 16.2558V7.74519L20.2267 12.0005Z" />
-                            <path d="M13.0907 12.5455L2.7271 12.5735C2.57182 12.5735 2.4421 12.5214 2.33791 12.4172C2.23373 12.313 2.18164 12.1833 2.18164 12.028C2.18164 11.8727 2.23373 11.743 2.33791 11.6388C2.4421 11.5346 2.57182 11.4825 2.7271 11.4825L13.0907 11.4545V12.5455Z"/>
-                            </svg>
-                          </a>
+                    
+                      <a class="button-outline" href="Predictive-ecosystem-redesign.html" >
+                          Discover the redesign
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-button">
+                          <path d="M13.0907 6.60036V17.4007C13.0911 17.51 13.1204 17.6172 13.1755 17.7107C13.2306 17.8042 13.3094 17.8804 13.4035 17.9312C13.4975 17.982 13.6033 18.0054 13.7093 17.9989C13.8153 17.9925 13.9177 17.9564 14.0052 17.8945L21.5824 12.4943C21.8965 12.2705 21.8965 11.7317 21.5824 11.5073L14.0052 6.10715C13.9178 6.04464 13.8155 6.00798 13.7093 6.00116C13.6031 5.99434 13.4971 6.01762 13.4028 6.06845C13.3085 6.11929 13.2296 6.19576 13.1746 6.28953C13.1196 6.38331 13.0906 6.49081 13.0907 6.60036ZM20.2267 12.0005L14.2564 16.2558V7.74519L20.2267 12.0005Z" />
+                          <path d="M13.0907 12.5455L2.7271 12.5735C2.57182 12.5735 2.4421 12.5214 2.33791 12.4172C2.23373 12.313 2.18164 12.1833 2.18164 12.028C2.18164 11.8727 2.23373 11.743 2.33791 11.6388C2.4421 11.5346 2.57182 11.4825 2.7271 11.4825L13.0907 11.4545V12.5455Z"/>
+                          </svg>
+                        </a>
                         
                     </div>
                 </div>
@@ -130,13 +122,13 @@
                     <!-- Row contenente le NEW VERTICAL CARDS -->
                       <!-- INIZIO della card vertical - piccina -->
                       <div class="col-lg-6">
-                        <a href="Bank website.html" class="a-notextdecoration link-card"> <!-- aggiungere eventuale :hover alla card/link! -->
+                        <a href="Bank-website.html" class="a-notextdecoration link-card"> <!-- aggiungere eventuale :hover alla card/link! -->
                           <div class="card-vertical" > <!-- Brand new Bank landing page -->
                             <div> <!-- div contenente immagine copertina card -->
                               <img src="assets/imgs/card cover/card-cover-1.png" class="card-img-other img-fluid mx-auto d-block" alt="mockup Nexus website tablet">
                             </div>
                             <div class="card-body">
-                              <h5 class="card-title">Shaping Venture Identity</h5>
+                              <h5 class="card-title">Shaping venture identity</h5>
                               <p class="card-text">
                                 A digital portal designed to bring a new Venture Capital brand to life. Aim at: clear layouts, functional design and dynamic animations together with structured storytelling.
                               </p> 
@@ -152,7 +144,7 @@
                       </div>
                       <!-- FINE della card vertical piccina -->
                        <div class="col-lg-6">
-                        <a href="Dealer portal.html" class="a-notextdecoration link-card">
+                        <a href="Dealer-portal.html" class="a-notextdecoration link-card">
                           <div class="card-vertical" > <!-- B2B ecosystem upgrade -->
                             <div> <!-- div contenente immagine copertina card -->
                               <img src="assets/imgs/card cover/card-cover-5.png" class="card-img-other img-fluid mx-auto d-block" alt="mockup B2B ecosystem upgrade">
@@ -178,11 +170,11 @@
                      
                       <!-- INIZIO della card vertical piccina -->
                       <div class="col-lg-6 ">
-                        <a href="SAP website.html" class="a-notextdecoration link-card">
+                        <a href="SAP-website.html" class="a-notextdecoration link-card">
                           <div class="card-vertical" > <!-- PA SAP website redesign -->
                             <img src="assets/imgs/card cover/card-cover-4.png" class="card-img-other img-fluid mx-auto d-block" alt="mockup PA SAP website redesign">
                             <div class="card-body">
-                              <h5 class="card-title">Public Sector System Redesign</h5>
+                              <h5 class="card-title">Public Sector system redesign</h5>
                               <p class="card-text">
                                 Redesign of a centralized Public Administration platform for project reporting and control. Transformation of complex data exchanges into an SAP Fiori-compliant ecosystem with custom data visualization and efficient role-based workflows.
                               </p>
@@ -200,11 +192,11 @@
                       
                       <!-- INIZIO della card vertical piccina -->
                       <div class="col-lg-6 ">
-                        <a href="UX UI hints.html" class="a-notextdecoration link-card">
+                        <a href="UX-UI-hints.html" class="a-notextdecoration link-card">
                           <div class="card-vertical" > <!-- Brand new Bank landing page -->
                             <img src="assets/imgs/card cover/card-cover-3.png" class="card-img-other img-fluid mx-auto d-block" alt="mockup iPhone13 weather app UI">
                             <div class="card-body">
-                              <h5 class="card-title">Product Design useful stuff & resources</h5>
+                              <h5 class="card-title">Product design hints</h5>
                               <p class="card-text">
                                 I created a practical design compendium and crafted the 'Squeaky Hints' series to help amateur designers bridge the gap between theory and practice. Click to uncover my downloadable lessons and exercises focused on making accessibility and user-centered design easy to understand.
                               </p>
@@ -226,13 +218,14 @@
                     <!-- Row contenente le NEW VERTICAL CARDS -->
                      
                       
-                      <!-- INIZIO della card vertical piccina -->
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <a href="corporate site redesign.html" class="a-notextdecoration link-card">
-                          <div class="card-vertical" > <!-- Brand new Bank landing page -->
-                            <img src="assets/imgs/card cover/card-cover-6.png" class="card-img-other img-fluid mx-auto d-block" alt="mockup iPhone13 weather app UI">
+                       <!-- INIZIO della card vertical piccina -->
+                      <div class="col-lg-6">
+                        <a href="SMC-redesign.html" class="a-notextdecoration link-card">
+                          <div class="card-vertical" > <!-- SMC -->
+
+                            <img src="assets/imgs/card cover/card-cover-6.png" class="card-img-other img-fluid mx-auto d-block" alt="SMC website redesign mockup iPhone13">
                             <div class="card-body">
-                              <h5 class="card-title">Corporate Website Redesign</h5>
+                              <h5 class="card-title">SMC website Redesign</h5>
                               <p class="card-text">
                                 Fresh new design for the SMC website: this version change of look aims to create a usable and fully accessible product, that complies with the latest design trends. 
                               </p>
@@ -251,11 +244,11 @@
                       <!-- INIZIO della card vertical piccina -->
                       <div class="col-lg-6">
                         <a href="Weather-app.html" class="a-notextdecoration link-card">
-                          <div class="card-vertical" > <!-- Brand new Bank landing page -->
+                          <div class="card-vertical" > <!-- weather app mobile -->
 
                             <img src="assets/imgs/card cover/card-cover-8.png" class="card-img-other img-fluid mx-auto d-block" alt="weather app UI mockup iPhone13">
                             <div class="card-body">
-                              <h5 class="card-title">A different weather app</h5>
+                              <h5 class="card-title">Weather app study</h5>
                               <p class="card-text">
                                This study  explores the glassmorphism aesthetic, combining frosted glass effects and vibrant 3D elements with a structured dark-mode layout to create an immersive, multi-layered user experience.
                               </p>
@@ -311,6 +304,20 @@
         });
     });
     </script>
+
+<script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "simple-menu") {
+        // Se il menu è chiuso, aggiungiamo la classe "responsive" per aprirlo
+        x.className += " responsive";
+      } else {
+        // Se è già aperto, la togliamo per richiuderlo
+        x.className = "simple-menu";
+      }
+    }
+  </script>
+
 
  </body>
 </html>
