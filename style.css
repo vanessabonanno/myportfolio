@@ -1377,11 +1377,34 @@ p {
 }
 
 
+.mail-link {
+    color: #2F5279;
+    font-family: "Ubuntu Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.mail-link:hover {
+    color: #2F5279;
+    font-family: "Ubuntu Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+
+
 .aa {
     background-color: #4F769C;
     border: 2px solid #9C4F8B;
 }
-
 
 
 
