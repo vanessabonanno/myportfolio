@@ -10,7 +10,8 @@
 body {
     background: #F6F9FB;
     color: #1B2833;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Quattrocento Sans", Arial, sans-serif;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -29,7 +30,7 @@ body {
 
 .heading {
     color: #1B2832;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -142,7 +143,7 @@ a:active {
 /* about  */
 a {
 color: #2F5279;
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -158,7 +159,7 @@ color: #2F5279;
 
 .about-body-resume a {
     color: #2F5279;
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
 }
@@ -169,7 +170,7 @@ color: #2F5279;
     color: #354E64;
     font-size: 16px;
     line-height: 150%; 
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-style: normal;
 } 
 
@@ -178,7 +179,7 @@ h2 {
     color: #354E64;
     font-size: 16px;
     line-height: 150%; 
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-style: normal;
     margin-bottom: 1rem;
 } 
@@ -439,7 +440,7 @@ li::marker {
 p {
     color: #1B2833;
     /* Body_1 */
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -447,7 +448,7 @@ p {
 }
 
 .about-body a {
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -460,7 +461,7 @@ p {
 .paragraphs {
     color: #080F14;
     /* Body_1 */
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -484,7 +485,7 @@ p {
 .about-body-resume p {
     color: #2D3C49;
     /* Body_1 */
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -494,7 +495,7 @@ p {
 
 .about-body-resume a {
     color: #2F5279;
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -521,7 +522,7 @@ p {
     color: #354E64;
     font-size: 16px;
     line-height: 150%; 
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-style: normal;
     margin-bottom: 1rem;
 
@@ -567,7 +568,7 @@ p {
 
 .card-horizontal-title {
     font-size: 1.7rem;    
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     line-height: 1.2;
     margin: 0;
     color: #1A1A1A;
@@ -712,7 +713,7 @@ p {
 
 .link-card, 
 .link-card .card-title {
-    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-family: 'Quattrocento Sans', Arial, sans-serif !important;
     text-decoration: none !important;
     line-height: 1.4;
     /*margine sotto x distanziarlo dal paragrafo */
@@ -797,7 +798,7 @@ p {
 
 .annotation-text {
   color: #30475A;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
@@ -821,7 +822,7 @@ p {
   border-radius: 8px;
   /* Stili del testo del badge  */
   color: #505C68;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -1473,6 +1474,11 @@ p {
 }
 
 
+/*-- decorative line divider --*/
+
+.decorative-divider p {
+    color: #9fbedf;
+}
 
 
 
