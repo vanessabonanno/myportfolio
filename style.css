@@ -58,8 +58,58 @@ body {
     padding-top: 0px; 
     
     align-self: flex-start;
-    
 }
+
+.about-body .presentation p {
+  margin-bottom: 0;
+}
+
+
+.stats-list {
+  width: 100%;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+
+  width: max-content;
+  max-width: 100%;
+  padding: 5px 14px;
+
+  color: #31567f;
+  border: 1px solid #dce4ed;
+  border-radius: 999px;
+
+  font-family: Quattrocento Sans, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  white-space: nowrap;
+}
+
+.stat-pill strong {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+  .stats-list {
+    gap: 16px !important;
+  }
+
+  .stat-pill {
+    font-family: Quattrocento Sans, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  white-space: nowrap;
+  }
+
+  .stat-pill strong {
+    font-size: 20px;
+  }
+}
+
 
 
 
@@ -1415,7 +1465,8 @@ p {
 
 
 .rolescope {
-    gap: 4px !important; 
+    gap: 0rem !important; 
+    margin-top: 0rem !important;
 }
 
 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessibility audits</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/icons/blackb.svg" type="image/x-icon">
+
+    <!--  Google fonts and icons  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200" rel="stylesheet" />
+  </head>
+  <body data-section="portfolio">
+    <main>
+      <div class="container-fluid container-fluid-max-xl">
+          <div class="row">
+            <div class="col-12 col-md-4">
+            
+              <!--   NAVBAR MENU new - responsive  -->
+              <nav class="simple-menu" id="myTopnav">
+                <div class="nav-header">
+                  <span class="heading">Vanessa</span>
+                  <a href="javascript:void(0);" class="iconburger" onclick="toggleMenu()">
+                    &#9776;
+                  </a>
+                </div>
+                
+                <div id="myLinks">
+                  
+                  <ul class="box">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                  </ul>
+                  
+                  <ul class="box">
+                  <li><a class="nav-link" href="https://www.linkedin.com/in/vanessa-bonanno-2a1516158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li><a class="nav-link" href="https://github.com/vanessabonanno/Projects" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                  <li><a class="nav-link" href="https://www.instagram.com/vein_brudal/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  </ul>
+                
+                </div>
+              </nav>
+               <!-- FINE NAVBAR MENU NEW -->
+            </div>
+
+            <div class="col-12 col-md-8  mt-4">
+            <!-- ---------------------------- ABOUT SECTION---------------------------- -->
+              <!-- Sezione descrittiva del progetto -->
+              <div class="about-section">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col auto px-0 headingfirst">
+                      <h1 class="heading">Accessibility Audits</h1>
+                    </div> 
+                    <!-- <div class="col auto px-0">
+                      <a  href="portfolio.html" class="project-link float-end">All projects</a>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="about-body rolescope">
+                  <p> <span class="text-strong">Client:</span> 7 organisations: national payments platform, Ministry of Culture, Costa Crociere, banking group, insurance authority, 2 enterprise intranets</p>
+                  <p> <span class="text-strong">Team:</span> Accessibility team (me as audit author and accessibility specialist, and senior accessibility auditor), working with client PMs and developers on confirmation rounds</p>
+                  <p> <span class="text-strong">Scope:</span> WCAG 2.1/2.2 AA, EN 301 549 and AgID audits: objective and heuristic analysis, screen-reader testing (NVDA, JAWS, VoiceOver, TalkBack), PDF accessibility, re-tests with developers, accessibility statements</p>
+                  <p> <span class="text-strong">Timeline:</span> December 2024 - present</p>
+                  <p> <span class="text-strong">Outcome:</span> 12+ audit deliverables and 1,500+ findings documented with 4-level priority, up to 3 confirmation rounds per product; bilingual accessibility statement for a cruise line's onboard app; testing an AI auditor (July 2026).</p>
+                </div>
+                
+                <img src="assets/imgs/a11y.png" class="img-cover" alt="example of accessibility audit deliverable">
+
+                
+                <div class="about-body chapters">
+                  <div>
+                    <h2 class="text-strong" id="video-editing">Context</h2>
+                    
+                    <p>Since December 2024 accessibility has been half of my job at SMC. Italian public administrations and the companies that serve them must comply with Law 4/2004, WCAG 2.1 AA and EN 301 549, and since June 2025 the European Accessibility Act extends the same duty to banking, e-commerce and transport. Our clients needed a reliable answer to one question: where does our product fail real users, and what do we fix first?</p>
+                    <p>I have audited 7 organisations so far: a national payments platform, the Ministry of Culture's procedures portal, a cruise line's onboard web app, a banking group, an insurance authority and two enterprise intranets.</p>
+                  </div>
+                  <div>
+                    <h2 class="text-strong">What I do in an audit</h2>
+                    <ol>
+                      <li><strong>Scope the flows:</strong> with the client I list the user journeys to test, from login to the last confirmation screen, front office and back office. On the largest intranet this meant 189 flows.</li>
+                      <li><strong>Objective analysis:</strong> I check every applicable WCAG 2.1/2.2 success criterion at level A and AA, plus the EN 301 549 clauses for PDF documents, using axe, WAVE, Siteimprove and ARIA DevTools to speed up the mechanical part.</li>
+                      <li><strong>Subjective analysis:</strong> I walk the same flows the way users do: NVDA and JAWS on Windows, VoiceOver on Mac and iOS, TalkBack on Android, keyboard only, 200% zoom and 320 px reflow, colour-blindness simulation.</li>
+                      <li><strong>Report and prioritise:</strong> every finding gets an ID, the violated criterion, the element, a screenshot, a fix suggestion and one of four priorities: blocking, high, medium, low. The client receives a spreadsheet for developers and a short PDF report for management.</li>
+                      <li><strong>Confirm the fixes:</strong> when the team ships, I re-test each finding and mark it resolved, rejected or still open. Some products went through three confirmation rounds.</li>
+                    </ol>
+                  </div>
+                  
+                  
+                  <div>
+                    <h2 class="text-strong">Three examples</h2>
+                    <p>Enterprise intranet, 607 findings in one release. The client's collaboration platform was about to be sold to public administrations. In two phases (January to April 2025) my colleague and I covered 189 flows and logged 607 findings, 53 of them blocking: keyboard traps inside cards, focus jumping back to the top of the page, timers with no way to extend them. The developers received the findings grouped by module so each squad could work on its own list.</p>
+                    <p>National payments platform, from onboarding to APIs. Between September 2025 and February 2026 I audited three products of the same platform: the notification service, the reserved area (49 findings on onboarding, 85 on the dashboard) and the interoperability console (104 findings across catalogue, subscription, provision, client and delegation management). Recurring problems were grouped, so 9 occurrences of the same contrast issue count as one finding with one fix. In the confirmation round on the notification service, 60 of the 62 re-tested findings were resolved.</p>
+
+                    <p>Ministry portal, 16 procedures and 3 confirmation rounds. The citizen and back-office portal for cultural heritage procedures was tested procedure by procedure, from "export permit for artworks" to "expropriation". Each procedure got its own report with errors per screen and the list of failed criteria. I also audited the generated PDF forms against EN 301 549 chapter 10, because a form a screen-reader user cannot read is a procedure they cannot complete.</p>
+                  </div>
+
+                  <div>
+                    <h2 class="text-strong" id="figma-design">Beyond the report</h2>
+                    <ul>
+                      <li><strong>Accessibility statement:</strong> for Costa Crociere's onboard Mymoments app I wrote the legal accessibility statement in Italian and English, listing each non-compliant criterion in plain language.</li>
+                      <li><strong>Design guidelines:</strong> I turned the recurring findings into "Accessibility in Figma" guidelines for our design team: contrast pages in every UI kit, do and don't cards, typography rules for line height and spacing.</li>
+                      <li><strong>Testing an AI auditor:</strong> in July 2026 I was asked to pilot an experimental AI agent that drives a real browser, simulates users with different disabilities (screen reader, keyboard only, low vision, colour blindness, tremor, dyslexia, photosensitivity) and produces a WCAG 2.2 report. I ran it on a ministry form I had just audited by hand and compared the two. On the common perimeter we found 25 distinct problems: 1 caught by both, 17 only by me (contrast on icons and input borders, modals, back-office states), 7 only by the tool, including 2 real violations on hidden anti-bot fields my screen-reader pass had missed. Neither audit alone covered the service; each one would have lost about two thirds of the issues. My recommendation to the team: use the agent as the first pass and for regression checks, keep the human for multi-step flows, modals and judgement calls, and design the reports so the two sets of findings merge into one list.</li>
+                    </ul>
+                  </div>
+
+                  <div class="pb-5">
+                    <h2 class="text-strong" id="figma-design">Something new I learned</h2>
+                    <ul>
+                      <li><strong>Developers fix what they understand:</strong> A screenshot, the exact element and a suggested fix get resolved; a criterion number alone does not.
+                      <li><strong>The best audit is the one you do not need:</strong> Most findings came from components that were never designed with focus, labels and contrast in mind, which is why I now bring the checklist into Figma before anything ships</li>
+                    </ul>
+                  </div>
+                  
+                  
+              </div>
+              
+            </div> <!-- fine colonna annotazioni -->
+          </div> <!-- fine riga screenshot + annotazioni -->
+        </div> <!-- fine area scrolly  -->
+
+
+    </main>
+	<script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="function.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname.split("/").pop();
+    const bodySection = document.body.getAttribute('data-section');
+
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+
+        // Caso 1: Corrispondenza esatta del file
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        } 
+        
+        // Caso 2: Siamo in una sottopagina (grazie al data-section sul body)
+        if (bodySection === 'portfolio' && linkPath === 'portfolio.html') {
+            link.classList.add('active');
+        }
+    });
+});
+</script>
+
+<script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "simple-menu") {
+        // Se il menu è chiuso, aggiungiamo la classe "responsive" per aprirlo
+        x.className += " responsive";
+      } else {
+        // Se è già aperto, la togliamo per richiuderlo
+        x.className = "simple-menu";
+      }
+    }
+  </script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+                  
+
+                 
+
+                
