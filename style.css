@@ -167,7 +167,7 @@ a:focus-visible {
 
 a {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     /* text-decoration: none; */
@@ -175,7 +175,7 @@ a {
 
 a:hover {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     text-decoration: none;
@@ -183,7 +183,7 @@ a:hover {
 
 a:active {
     color: #9C4F8B;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     text-decoration: none;
@@ -236,7 +236,7 @@ h2 {
 
 .year {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -244,7 +244,7 @@ h2 {
 
 .nav-link {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -253,7 +253,7 @@ h2 {
 
 .nav-link:hover {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -262,7 +262,7 @@ h2 {
 
 .nav-link:active {
     color: #9C4F8B;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -322,7 +322,7 @@ li::marker {
     border: 1px solid #4F769C;
     background-color: transparent;
     color: #4F769C;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -337,7 +337,7 @@ li::marker {
     gap: 8px;
     border-radius: 24px;
     background-color: transparent;  
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -354,7 +354,7 @@ li::marker {
     gap: 8px;
     border-radius: 24px;
     background-color: transparent;  
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -965,7 +965,7 @@ p {
 
 .tab-link {
     color: #4F769C;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -990,7 +990,7 @@ p {
 
 .tab-link-active {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1000,7 +1000,7 @@ p {
 /*
 .tab-link-active:hover {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1009,7 +1009,7 @@ p {
 
 .tab-link-active:active {
     color: #9C4F8B;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1019,7 +1019,7 @@ p {
 
 .tab-link {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1028,7 +1028,7 @@ p {
 
 .tab-link:hover {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1037,7 +1037,7 @@ p {
 
 .tab-link:active {
     color: #9C4F8B;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1322,7 +1322,7 @@ p {
 
 .card-content h1 {
     color: #1B2833;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -1332,7 +1332,7 @@ p {
 .card-content p {
     color: #1B2833;
     /* Body_1 */
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1420,7 +1420,7 @@ p {
 .testo-dati-personali p{
     color: #080F14;
     /* Body_1 */
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1430,7 +1430,7 @@ p {
 
 .mail-link {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1441,7 +1441,7 @@ p {
 
 .mail-link:hover {
     color: #2F5279;
-    font-family: "Ubuntu Mono";
+    font-family: "Ubuntu Mono", monospace;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1620,3 +1620,7 @@ p {
 }
 
 
+
+
+/* Reserve image space to avoid layout shifts (CLS) */
+img { height: auto; }
