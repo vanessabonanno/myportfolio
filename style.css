@@ -1624,3 +1624,6 @@ p {
 
 /* Reserve image space to avoid layout shifts (CLS) */
 img { height: auto; }
+
+/* Current page link: not clickable */
+.nav-link.active { pointer-events: none; cursor: default; }
